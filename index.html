@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #e3eaf3, #cfd9e6);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: linear-gradient(90deg, #0056b3, #4b0082);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 8px 8px 0 0;
+}
+.header:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.marquee-container {
+    background: #ff9800;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 50px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+    
+    <script>
+        function updateClock() {
+            const now = new Date();
+            document.getElementById("clock").innerHTML = now.toLocaleString();
+        }
+        setInterval(updateClock, 1000);
+    </script>
+</head>
+<body>
+    <div class="header">
+        Welcome to My  Website
+        <div id="clock" style="position: absolute; top: 10px; right: 20px; font-size: 14px; color: white;"></div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="p3.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/shlokraj-sinha-125960289/"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="marquee-container">
+        <marquee>Stay connected with us for the latest updates and information!</marquee>
+    </div>
+    
+    <div class="container mt-4 text-align">
+
+        <h1 >About Me:</h1>
+        <p>
+            Welcome to My website! Hi, I'm Krish Jani, a student at Karnavati University with a deep passion for web technologies. 
+            I love exploring the ever-evolving world of web development, from front-end design to back-end architecture. 
+            Constantly learning and experimenting, I strive to create innovative and user-friendly digital experiences. 
+
+            <p>Excited to connect, collaborate, and build the future of the web! </p>
+        </p>
+        <p>
+            This website was created as part of an assignment given by our professor. 
+            The goal of this project is to apply what we've learned and demonstrate our skills in web development. 
+            Through this website, we aim to showcase our ability to design, structure, and present content effectively.
+           
+            <p> This is just a demo web page.</p>
+        </p>
+    </div>
+    
+    <div class="footer">
+        <a href="p5.html" class="text-info">TimeTable</a> |
+        <a href="p6.html" class="text-info">Results</a> |
+        <a href="sitemap.html" class="text-info">Sitemap</a>
+    </div>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
